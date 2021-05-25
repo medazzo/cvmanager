@@ -55,7 +55,8 @@
 %\skype{skypeid}
 %\stackoverflow{SOid}{SOname}
 %\twitter{@twit}
-\position{Senior Software Engineer{\enskip\cdotp\enskip} Linux - STB/DRM/OTT - J2ee/Spring -  Angular - DevOps} % Your expertise/fields
+\position{Senior Software Engineer{\enskip\cdotp\enskip} Linux/Yocto - STB/DRM/OTT - Java/kotlin/Spring -  Javascript/Nodejs/Angular - Jenkins/DevOps} % Your expertise/fields
+
 \makecvfooter{\today}{Mohamed Azzouni~~~·~~~CV }{\thepage} % Specify the letter footer with 3 arguments: (<left>, <center>, <right>), leave any of these blank if they are not needed
 
 %----------------------------------------------------------------------------------------
@@ -73,23 +74,27 @@
 
     \cvskill
     {Programming} % Category
-    {C, C++, JAVA, PYTHON, PERL, SHELL , Makefiles, HTML, PHP, XML, Javascript  }% Skills
+    {C, C++, JAVA, KOTLIN, BASH, PYTHON, PERL, SHELL , Makefiles, HTML, PHP, XML, Javascript  }% Skills
 
     \cvskill
-    {Versioning \& CI} % Category
-    { SVN, Jenkins, Jenkins pipeline, Git, Github CI, MERCURIAL }% Skills
+    {Tools \& CI} % Category
+    {SVN, Git, Github, Bitbucket, MERCURIAL, Jenkins, JIRA, Confluence }% Skills
 
     \cvskill
     {Web \& OTT} % Category
-    {nodejs ,dashjs , angular , shaka player ,  Packet Video, GUPNP, Lib Platinum, REST, SOAP }% Skills
+    {nodejs, dashjs,reactjs, expressjs, angular, shaka player, Packet Video, GUPNP, Lib Platinum, REST }% Skills
 
     \cvskill
     {J2ee \& DB} % Category
-    {Java Jersey Rest , J2ee , Spring , Rest, PostgresQl , Mongo db , Hbase} % Skills
+    {Java Jersey Rest, J2ee, Spring, Rest, PostgresQl, Mongo db, Hbase} % Skills
 
     \cvskill
-    {others} % Category
-    { Agile, Android: NDK/SDK/JNI, STB:Middleware \& Drivers, HDCP, MPEGDASH, HLS , VOD, OTT,Playready, UPNP, Yocto, Bitbacke}% Skills
+    {Embedded} % Category
+    { Android: NDK/SDK/JNI, STB:Middleware \& Drivers, OpenEmbedded:Yocto \& sBitbacke}
+    
+    \cvskill
+    {Networking} % Category
+    { HDCP, MPEGDASH, HLS , VOD, OTT,Playready, UPNP, IPV4}% Skills
 
     \cvskill
     {Languages} % Category
@@ -125,38 +130,61 @@
     {September. 2020 - PRESENT} % Date(s)
     { % Description(s) of tasks/responsibilities
         \begin{cvitems}
-            \item {Architect: EBLinux-3 is a safe Linux Automotive distribution for EB, based on Open Build Service and Suse Delivery}
-            \item {Responsible for setting tests environment and coverage to argument safety.}
-            \item { \textbf{Environment :} Linux, Suse Open Build Service, Intel Denverton , coverage, CI, Jenkins}
+            \item {Architect: EBLinux-3 is a safe Linux Automotive distribution for EB, based on SUSE Open Build Service and Suse Kernel}
+            \item {This new Version in no more based on yocto, here we deliver rpm packages using OBS}
+            \item {Responsible for setting test environment:}
+            \begin{itemize}
+                \item adding needed repository , and packages 
+                \item Setting up EBS packages definitions   
+                \item setting up Building environement 
+                \item setting up needed scripts to run qemu 
+                \item setting up needed scripts to install image  on Hardware Targets IntelDenverton and makeavailable for all team
+              \end{itemize}
+            \item {Responsible for setting coverage tests.}
+            \item { \textbf{Environment :} Linux, Suse Open Build Service, Intel Denverton , code coverage, obj coverage CI, Jenkins}
         \end{cvitems}
     }
 
     \cventry
-    {Linux Architecte } % Job title
+    {EBLinux Architecte } % Job title
     {} % Organization
     {Carrières-sur-Seine , France} % Location
     {August. 2018 - August. 2020} % Date(s)
     { % Description(s) of tasks/responsibilities
         \begin{cvitems}
             \item {Architecte on EB-Linux: EB-Linux is an Automotive Linux distribution for EB, based on Yocto Open-embedded tools}
-            \item {This Linux distribution will manage containers to run user applications and shall be on a supervised environment by an L4 (Fiasco) Microkernel...}
-            \item { \textbf{Environment :} Linux,Yocto, Renesas ,L4 Microkernel, CI, Jenkins, RobotFramework}
+            \item {This Linux distribution will manage containers to run user applications }
+            \item {This Linux distribution support RCAR H3/M3 and Intel on bare Metal or on A Hypervisor based on L4 (Fiasco) Microkernel}
+            \item {My intervention :}
+            \begin{itemize}
+                \item Support on Requiremnts definitions and redaction
+                \item Techniqual tickets creation on JIRA based on Functional or Client Requirements.
+                \item Recipes implementations and maintaining related to network area
+                \item Client Project task force support on bitbake and recipes hot fixes:
+                \begin{itemize}
+                    \item removing openssl
+                    \item enabling SMACK Mandatory ACCESS Control Kernel 
+                    \item ..
+                  \end{itemize}
+              \end{itemize}
+            \item { \textbf{Environment :} Linux,Yocto, Renesas ,L4 Microkernel, CI, Jenkins, RobotFramework, LTP, BASH, C/C++}
         \end{cvitems}
     }
 
     \cventry
-    {CI Team Manager} % Job title
+    {EBLinux CI Team Techniqual Lead} % Job title
     {} % Organization
     {Carrières-sur-Seine , France} % Location
     {Sep. 2018 - August. 2019} % Date(s)
     { % Description(s) of tasks/responsibilities
         \begin{cvitems}
-            \item {Responsible for Continous Integration Team: plan, support and follow activity}
-            \item {The team I was responsible of was  six engineer in Croatia }
-            \item {Team goals was to plan testing nightly , weekly .. unit testing , integrations .. Merging verifications  }
-            \item {CI also include managing testing of the EBLinux using Robot Framewirk and LTP tests ..  }
-            \item {CI is based on Githuib and Jenkins using Merging Trigger no Pull Requests}
-            \item { \textbf{Environment :} Linux,Yocto, python, xml, CI, Jenkins, RobotFramework}
+            \item {Techniqual Responsible for Continous Integration Team: plan, support team and follow activity}
+            \item {The team is made up of six engineers based in Croatia }
+            \item {Team goals was to setup testing unit testing , integrations .. Merging verifications on nightly and weekly frequency}
+            \item {Tests are setup on Jenkins Server's and robot frameworks tests for LTP tests on Yocto Framework}
+            \item {Tests are run on Qemu and Hardware targets using tools and scripts created within the team and results are saved in Github}
+            \item {CI is based on Github and Jenkins using Merging Trigger on Pull Requests}
+            \item { \textbf{Environment :} Linux,Yocto, python, xml, CI, Jenkins, RobotFramework, BASH, C/C++}
         \end{cvitems}
     }
 
@@ -329,13 +357,13 @@
 \end{cventries}
 
 
-\cvsection{Internal Projects}
+\cvsection{Internal Projects EASYSOFT-IN}
 \begin{cventries}
 
     \cventry
     {Open Source Spring Rest Generator } % Affiliation/role
-    {Internal development for my account } % Organization/group
-    { \href{https://github.com/medazzo/sbr-generator}{Github Project Link} }% Location
+    {sbr-generator: Open source} % Organization/group
+    { \href{https://github.com/medazzo/sbr-generator}{sbr-generator on Github} }% Location
     {} % Date(s)
     { % Description(s) of experience/contributions/knowledge
         \begin{cvitems}
@@ -349,11 +377,45 @@
         \end{cvitems}
     }
 
+    %------------------------------------------------
+
+    \cventry
+    {Fjplayer Mpeg Dash/Mp4 video player  } % Affiliation/role
+    {fjplayer: Open source } % Organization/group
+    { \href{hhttps://github.com/medazzo/fjplayer}{fjplayer on Github} } % Location
+    {Nov. 2012} % Date(s)
+    { % Description(s) of experience/contributions/knowledge
+        \begin{cvitems}
+            \item {The FJPlayer Html 5 Js player based on Video Balise }
+            \item {The FJPlayer also is based On \href{http://dashif.org/reference/players/javascript/1.4.0/samples/dash-if-reference-player/}{Dashjs player} }
+            \item {Once we ask to play a media content on website , the player will ask the encryption key of the media presenting the web site AppID, then get the mpd and start streaming , decrypting  and playing..}
+        \end{cvitems}
+    }
+
+    %------------------------------------------------
+
+    \cventry
+    {Realization of FJ Streaming Engine} % Affiliation/role
+    {EKIOSK : Private Source} % Organization/group
+    { \href{https://bitbucket.org/easysoftin/workspace/projects/ECK}{BitBucket Project Link} }% Location
+    {Jun. 2012 - Jan. 2017}  % Date(s)
+    { % Description(s) of experience/contributions/knowledge
+        \begin{cvitems}
+            \item {The EKIOSK is a yocto based project used to realize kiosk like images deployed on ARM raspberry pie, composed by :}
+            \begin{itemize}
+                \item { meta-eck : yocto layer that define all needed recipes }
+                \item { include browser layers to run web kiosk application }            
+                \item { packages source code : ..}            
+            \end{itemize}
+        \end{cvitems}
+    }
+
+    %------------------------------------------------
 
     \cventry
     {Realization of Easin Sales Server } % Affiliation/role
-    { Internal development for my account } % Organization/group
-    { \href{https://bitbucket.org/account/user/easysoftin/projects/EAS}{BitBucket Project Link} }% Location
+    { Forja Streaming Engine: Private Source} % Organization/group
+    { \href{https://bitbucket.org/easysoftin/workspace/projects/EAS}{BitBucket Project Link} }% Location
     {Nov. 2018 - PRESENT} % Date(s)
     { % Description(s) of experience/contributions/knowledge
         \begin{cvitems}
@@ -361,7 +423,7 @@
             \begin{itemize}
                 \item { A J2ee rest spring java server with a PostgreSQL Database behind called ESServer}
                 \item { An Angular 7 Server based Angular Material UI called EBILL }
-                \item { A phone App still to come}
+                \item { A phone App still to come..}
             \end{itemize}
             \item {  ESServer : }
             \begin{itemize}
@@ -381,52 +443,18 @@
     %------------------------------------------------
 
     \cventry
-    {Realization of FJ Streaming Engine} % Affiliation/role
-    {Internal development for my account } % Organization/group
-    { \href{https://bitbucket.org/account/user/easysoftin/projects/FJSE}{BitBucket Project Link} }% Location
-    {Jun. 2012 - Jan. 2017}  % Date(s)
-    { % Description(s) of experience/contributions/knowledge
-        \begin{cvitems}
-            \item {The FJSE is three part project, containing :}
-            \begin{itemize}
-                \item { A J2ee rest java server  with a mongodb Database called FJServer}
-                \item { An AngularJs 5 Server UI called FJUI }
-                \item { A  html 5 Js dash player called FJPlayer}
-            \end{itemize}
-            \item {  FJServer : }
-            \begin{itemize}
-                \item{ The FJServer will upload video content ,  transcode it(using ffmpeg) to 5 bitrates h264 video ( from 360kb/s to 4500kb/s) and 3 bitrates aac audio( from 128kb/s to 450 kb/s , then dash and encrypt it using Bento4 framework for vod and Googlepackager for Live (packaging is done wi python scripts and CENC clear key  is used ). once done , the movie is available to FJSE client to be streamed as dash protected content . }
-                \item {this FJServer is used by manager user to connect using oauth2 protocol (login/password), than he can upload medias and define streams, slso define app or web site allowed to access this stream , once dashed streams will be availables to allowed app or web sites for streaming}
-            \end{itemize}
-            \item {FJUI :}
-            \begin{itemize}
-                \item {it the Server Angular 5 UI , which allow User  to connect to FJServer , define stream and upload movies or define live streams  , user also can define app/webSite that are allowed to use his streams ..
-                      streaming}
-                \item {The UI contains also a dashboard that presents statistics about streams regarding number of watches , clients IP ..}
-            \end{itemize}
-            \item { FJPLAYER :}
-            \begin{itemize}
-                \item {The FJPlayer Html 5 Js player based on Video Balise }
-                \item {The FJPlayer also is based On \href{http://dashif.org/reference/players/javascript/1.4.0/samples/dash-if-reference-player/}{Dashjs player} }
-                \item {Once we ask to play a media content on website , the player will ask the encryption key of the media presenting the web site AppID, then get the mpd and start streaming , decrypting  and playing..}
-            \end{itemize}
-        \end{cvitems}
-    }
-
-    %------------------------------------------------
-
-    \cventry
     {Realization of an android application } % Affiliation/role
-    {Internal development for my account } % Organization/group
-    { \href{https://play.google.com/store/apps/details?id=com.EasySoft.easyup}{Easy Upnp on Google Play Link} } % Location
+    {Easy Upnp: Private Source} % Organization/group
+    { \href{https://play.google.com/store/apps/details?id=com.easysoftin.easyup}{Easy Upnp on Google Play Link} } % Location
+    { \href{https://bitbucket.org/easysoftin/easyup/src/master/}{Easy Upnp Source on Gitthub} } % Location
     {Nov. 2012} % Date(s)
     { % Description(s) of experience/contributions/knowledge
         \begin{cvitems}
-            \item {The applicartion is an upnp control point wthat allow to discover and control upnp devices on a lan network.}
-            \item {This app was completly developpend with Java code.}
+            \item {The application is an upnp control point that allow to discover and control upnp devices on a lan network.}
+            \item {This app was completly developpend with kotlin code ( a old previous version was done using Java).}
             \item {This app also contains advertissment , it's done with google AdsMob..}
-            \item {This app is no more maintained}
         \end{cvitems}
     }
+
 \end{cventries}
 \end{document}
