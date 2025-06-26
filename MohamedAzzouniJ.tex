@@ -1,0 +1,453 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Awesome Resume/CV
+% XeLaTeX Template
+% Version 1.1 (9/1/2016)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Claud D. Park (posquit0.bj@gmail.com) with modifications by
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template must be compiled with XeLaTeX, the below lines will ensure this
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass[11pt, a4paper]{awesome-cv} % A4 paper size by default, use 'letterpaper' for US letter
+\geometry{left=2cm, top=1.5cm, right=2cm, bottom=2cm, footskip=.4cm} % Configure page margins with geometry
+\fontdir[fonts/] % Specify the location of the included fonts
+
+% Color for highlights
+\colorlet{awesome}{awesome-orange}
+% Default colors include: awesome-red, awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange, awesome-nephritis, awesome-concrete, awesome-darknight
+%\definecolor{awesome}{HTML}{F00A12} % Uncomment if you would like to specify your own color
+
+% Colors for text - uncomment and modify
+%\definecolor{darktext}{HTML}{424242}
+%\definecolor{text}{HTML}{151515}
+%\definecolor{graytext}{HTML}{1C1C1C}
+%\definecolor{lighttext}{HTML}{414141}
+
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad} % If you would like to change the social information separator from a pipe (|) to something else
+
+%----------------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%----------------------------------------------------------------------------------------
+
+\name{Mohamed}{Azzouni}
+\address{8 rue Jesse Owens , Saint Denis}
+\mobile{0033 (0) 699879354}
+\email{mohamed.azzouni@gmail.com}
+\homepage{www.easysoft-in.com}
+\github{medazzo}
+\linkedin{mohamedazouni}
+%\skype{skypeid}
+%\stackoverflow{SOid}{SOname}
+%\twitter{@twit}
+\position{Senior Software Engineer{\enskip\cdotp\enskip} Java/kotlin/Spring -  Javascript/Typescript/Nodejs/Angular/Reacts/ExpressJs - Jenkins/Gitlab/Github/DevOps} % Your expertise/fields
+
+\makecvfooter{\today}{Mohamed Azzouni~~~·~~~CV }{\thepage} % Specify the letter footer with 3 arguments: (<left>, <center>, <right>), leave any of these blank if they are not needed
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\makecvheader % Print the header
+
+%----------------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%----------------------------------------------------------------------------------------
+
+\cvsection{Skills}
+\begin{cvskills}
+
+    \cvskill
+    {Programming} % Category
+    {JAVA, Spring, Javascript, Typescript, Angular, Kotlin, C, C++, BASH, PYTHON, PERL, SHELL , Makefiles, HTML, PHP, XML  }% Skills
+
+    \cvskill
+    {Frameworks} % Category
+    {Spring Boot, Spring Security, Angular 7+, JasperReports }% Skills
+
+    \cvskill
+    {Web \& Backend} % Category
+    { REST API, Node.js, Express.js, MongoDB, PostgreSQL, J2EE, Jersey }% Skills
+
+    \cvskill
+    {Tools \& CI} % Category
+    {SVN, Git, Github, Gitlab, Bitbucket, Jenkins, JIRA, Confluence }% Skills
+
+    \cvskill
+    {Networking} % Category
+    { HDCP, MPEGDASH, HLS , VOD, OTT,Playready, UPNP, IPV4, TCPIP, Serial, I2C, SPI..}% Skills
+
+    \cvskill
+    {Languages} % Category
+    {Arabic, French, English} % Skills
+
+\end{cvskills}
+
+
+\cvsection{Education}
+\begin{cventries}
+
+    \cventry
+    {Engineering degre in Computer Science} % Degree
+    {ENSI( National School of Computer Sciences of Tunis )} % Institution
+    {Tunis, Tunisia} % Location
+    {2004 - 2007} % Date(s)
+    { % Description(s) bullet points
+        speciality in open systems and networks
+    }
+
+\end{cventries}
+
+
+\cvsection{Experience}
+\begin{cventries}
+
+
+   %---------------------- EASYSOFT-IN --------------------------
+    \cventry
+    {Developpeur Java, Spring boot: open source project sbr-generator} % Job title
+    {EASYSOFT-IN} % Organization
+    { \href{https://github.com/medazzo/sbr-generator}{sbr-generator on Github} }% Location
+    {2012 .. Present} % Date(s)
+    { % Description(s) of experience/contributions/knowledge
+        \begin{cvitems}
+            \item {This is a a rest server based on JAVA Spring Boot generator , first version it was an npm binary and current (v2) it's a complete python package.}
+            \item {This python package provide a tools that will generate a rest spring server with multiple features from a simple yaml config file :}
+            \begin{itemize}
+                \item {jwt token is ready to be used with authentication}
+                \item {can also enable and generate java tests files for created code }
+                \item {security can be enabled on role based restrictions}
+                \item {a generated database ,connection and models , ready to e used}
+                \item {dev and prod profiels with different database}
+                \item {...}
+            \end{itemize}
+        \end{cvitems}
+    }
+  %------------------------------------------------
+
+    \cventry
+    {Developpeur Javascript: Realisation of open source Fjplayer Mpeg Dash/Mp4 video player} % Job title
+    {EASYSOFT-IN} % Organization
+    { \href{hhttps://github.com/medazzo/fjplayer}{fjplayer on Github} } % Location
+    {from. 2012} % Date(s)
+    { % Description(s) of experience/contributions/knowledge
+        \begin{cvitems}
+            \item {The FJPlayer Html 5 Js player based on Video Balise }
+            \item {The FJPlayer also is based On \href{http://dashif.org/reference/players/javascript/1.4.0/samples/dash-if-reference-player/}{Dashjs player} }
+            \item {Once we ask to play a media content on website , the player will ask the encryption key of the media presenting the web site AppID, then get the mpd and start streaming , decrypting  and playing..}
+        \end{cvitems}
+    }
+
+     %------------------------------------------------
+
+    \cventry
+    {Developpeur Java, Spring boot, Angular: Realization of ESServer Server and Angular frontend } % Job title
+    {EASYSOFT-IN} % Organization
+    {Hybrid: Saint Denis, France } % Location
+    {Nov. 2018 - PRESENT} % Date(s)
+    { % Description(s) of experience/contributions/knowledge
+        \begin{cvitems}
+            \item {The ESS  Easin Sales Server) is three part project, containing :}
+            \begin{itemize}
+                \item { A J2ee rest spring java server with a PostgreSQL Database behind called ESServer}
+                \item { An Angular 7 Server based Angular Material UI called EBILL }
+                \item { A phone App still to come..}
+            \end{itemize}
+            \item {  ESServer : }
+            \begin{itemize}
+                \item{ The FJServer will save and manage invoices created by user from EBILL}
+                \item{ manage also clients , company ..}
+                \item{ It propose a Rest Api proteted by json Token mechanism.}
+            \end{itemize}
+            \item {EBILL :}
+            \begin{itemize}
+                \item {It's the Server Front END , A Web applications based on Anuglar 7 , and on Angular Matriel.}
+                \item { It will allow User to connect to ESServer}
+                \item { It will allow User to define invoices and manages saved invoices, export them in pdf ...}
+            \end{itemize}
+        \end{cvitems}
+    }
+
+    %------------------------------------------------
+
+    \cventry
+    {Developpeur Java, Kotlin : Realization of an android application} % Job title
+    {EASYSOFT-IN} % Organization
+    { \href{https://play.google.com/store/apps/details?id=com.easysoftin.easyup}{Google Play Link}, \href{https://bitbucket.org/easysoftin/easyup/src/master/}{Github Link} } % Location
+    {Nov. 2012 -Nov 2021} % Date(s)
+    { % Description(s) of experience/contributions/knowledge
+        \begin{cvitems}
+            \item {The application is an upnp control point that allow to discover and control upnp devices on a lan network.}
+            \item {This app was completly developpend with kotlin code ( a old previous version was done using Java).}
+            \item {This app also contains advertissment , it's done with google AdsMob..}
+        \end{cvitems}
+    }
+
+
+    %------------------- SFR -----------------------------
+
+    \cventry
+    {Linux Yocto Integrator Expert} % Job title
+    {SFR} % Organization
+    {Hybrid: Paris , France} % Location
+    {Oct. 2024 - Present} % Date(s)
+    { % Description(s) of tasks/responsibilities
+        \begin{cvitems}
+            \item {Setup a complete gitlab structure for yocto Gateway project based on RDK and Yocto}
+            \item {Setup Continous Integration Dev Operations and complete workflow for nightl builds and releases workflow}
+            \item { \textbf{Environment :} ,  Gitlab, Linux, Yocto , Device Tree, Uboot, yocto kirkstone, kernel, modules kernel}
+        \end{cvitems}
+    }
+
+    %------------------- Faiveley Wabtec -----------------------------
+
+ \cventry
+    {Linux Yocto Expert} % Job title
+    {Wabtec} % Organization
+    {Hybrid:  Tours , France} % Location
+    {Juin 2023 - August 2024 } % Date(s)
+    { % Description(s) of tasks/responsibilities
+        \begin{cvitems}
+            \item {Migrate managed yocto repository from svn to Gitlab }
+            \item {Setup Continous Integration Dev Operations using KAS and Gitlab for complete yocto configuration}
+            \item {Migrate Yocto Dunfell to Yocto Kirkstone for All Microchip Arm Cortex-A5 Sama5 platforms}
+            \item {Participate in layer used for cyber security restriction and normes}
+            \item {Setup Yocto build system for new hardware platform based on SAMA5D2 and SAMA5D3 : integrating I2C RTC, TPM from Device tree to kernel setup and patches, driver for fpga communication with kernel module}
+            \item { \textbf{Environment :} ,  SAMA5, SVN, Gitlab, Linux, Yocto , Device Tree, Uboot, yocto dunfell , yocto kirkstone, kernel, modules kernel}
+        \end{cvitems}
+    }
+
+
+
+ \cventry
+    {Linux Yocto Expert} % Job title
+    {F.AI} % Organization
+    {Remote:  Paris , France} % Location
+    {Octopber. 2023 - December 2023} % Date(s)
+    { % Description(s) of tasks/responsibilities
+        \begin{cvitems}
+            \item {The client is setting a Linux distrubution for AI  based on amazon aws yocto layer and  for AWS machines }
+            \item {My tasks  were to setup the comple Yocto linux distro  from scratch on Github with a full CI from build to deploy}
+            \item {Create Linux yocto layer to nintilize client setups and confioguration also his own packages }
+            \item {Add needed third parties yocto layers to realize nd full linux distro }
+            \item {Setup dockerfile and Script CI to build and autiomatically deploy on Amazon AWS machines }
+	  \item {Setup Continous Integration Dev Operations using KAS and Gitlob for complete yocto configuration}
+            \item { \textbf{Environment :} Amazon AWS, Github, pipelines, Yocto , meta-aws, }
+        \end{cvitems}
+    }
+
+ \cventry
+    {Linux Yocto Expert} % Job title
+    {Fy.W} % Organization
+    {Hybrid:  Tours , France} % Location
+    {December. 2022 - December. 2023} % Date(s)
+    { % Description(s) of tasks/responsibilities
+        \begin{cvitems}
+            \item {Build yocto Linux distrubution for HW with bitbus serial connection}
+            \item {develop kernel module that manage a network interface and make the link with the serial bitbus connection}
+            \item { \textbf{Environment :} SAMA5 ,SVN, Linux, Yocto , Device Tree, Uboot, yocto dunfell , yocto kirkstone, kernel, modules kernel}
+        \end{cvitems}
+    }
+
+
+    %------------------- ELECTROBIT -------------------------
+
+
+ \cventry
+    {Architecte, Safe Api DevOPS Developer} % Job title
+    {ELEKTROBIT} % Organization
+    {Carrières-sur-Seine , France} % Location
+    {Sep. 2018 - Februray 2023} % Date(s)
+    { % Description(s) of tasks/responsibilities
+        \begin{cvitems}
+            \item {In project Safe Linux for EB, I'm responsible of packages builds as well as documents Builds}
+            \item {Setting up a Poc for CI Framework as a python package}
+            \item {Setting a Cmake build system for documenrts builds}
+            \item {Architect: EBLinux-3 is a safe Linux Automotive distribution for EB, based on SUSE Open Build Service and Suse Kernel}
+            \item {This new Version in no more based on yocto, here we deliver rpm packages using OBS}
+            \item {Responsible for setting test environment:}
+            \begin{itemize}
+                \item adding needed repository , and packages
+                \item Setting up EBS packages definitions
+                \item setting up Building environement
+                \item setting up needed scripts to run qemu
+                \item setting up needed scripts to install image  on Hardware Targets IntelDenverton and makeavailable for all team
+              \end{itemize}
+            \item {Responsible for setting coverage tests.}
+            \item {Architecte on EB-Linux: EB-Linux is an Automotive Linux distribution for EB, based on Yocto Open-embedded tools}
+            \item {This Linux distribution will manage containers to run user applications }
+            \item {This Linux distribution support RCAR H3/M3 and Intel on bare Metal or on A Hypervisor based on L4 (Fiasco) Microkernel}
+            \item {My intervention :}
+            \begin{itemize}
+                \item Support on Requiremnts definitions and redaction
+                \item Techniqual tickets creation on JIRA based on Functional or Client Requirements.
+                \item Recipes implementations and maintaining related to network area
+                \item Client Project task force support on bitbake and recipes hot fixes:
+                \begin{itemize}
+                    \item removing openssl
+                    \item enabling SMACK Mandatory ACCESS Control Kernel
+                    \item ..
+                  \end{itemize}
+              \end{itemize}
+            \item {Techniqual Responsible for Continous Integration Team: plan, support team and follow activity}
+            \item {The team is made up of six engineers based in Croatia }
+            \item {Team goals was to setup testing unit testing , integrations .. Merging verifications on nightly and weekly frequency}
+            \item {Tests are setup on Jenkins Server's and robot frameworks tests for LTP tests on Yocto Framework}
+            \item {Tests are run on Qemu and Hardware targets using tools and scripts created within the team and results are saved in Github}
+            \item {CI is based on Github and Jenkins using Merging Trigger on Pull Requests}
+            \item { \textbf{Environment :} Linux,Yocto, Renesas ,L4 Microkernel, CI, Jenkins, RobotFramework, LTP, BASH, C/C++, Suse Open Build Service, Intel Denverton , code coverage, obj coverage CI, Jenkins, Jenkins, Python, Cmake, docbook, docker}
+        \end{cvitems}
+    }
+
+
+    %------------------- EXPWAY -----------------------------
+
+    \cventry
+    {Linux/Android Development Engineer } % Job title
+    {EXPWAY} % Organization
+    {PARIS , France} % Location
+    {Jan. 2018 - Jui. 2018} % Date(s)
+    { % Description(s) of tasks/responsibilities
+        \begin{cvitems}
+            \item {Development of Solution for Public Gateway EMBMS Live Services WIFI multicast}
+            \item {LTE eMBMS (evolved Multimedia Broadcast Multicast Service) are used to drive live multicast service to end userphones.}
+            \item { An LTE  Outdoor unit is connected to a Gateway, the soft to be developed will be deployed on PG to activate dash live services and forward multicast packet to WIFI.}
+            \item {based on Expway Libarary a service will be developped and installed as daemon onBroadcom based public Gateway}
+            \item { \textbf{Environment :} Modem AT-Command, Broadcom ,Gateway, WIFI, Multicast, dash, EXPWAY Middleware ,JAVA, Kotlin, redmine , C, C++, Android}
+        \end{cvitems}
+    }
+
+
+    %------------------- SFR -----------------------------
+
+    \cventry
+    {Software DRM/HDCP Expert and Netflix integration } % Job title
+    {SFR-Numericable} % Organization
+    {Saint-Denis , France} % Location
+    {July. 2014 - Dec. 2017} % Date(s)
+    { % Description(s) of tasks/responsibilities
+        \begin{cvitems}
+            \item {Integration of Netflix nrd 4.3 within new 4K STB .}
+            \item {Concept and develop a library HDCPmanager that provides interface to manage hdcp link in 1.X and 2.x protocole versions.}
+            \item {Concept and develop a library DrmManager that provides interfaces to manager Playready 2.5 and eventually Widevine for SFR new Box used for VOD playing }
+            \item {Concept and develop a library that will install provisioning Data on STB : On factory for SFR new Box ( data : Nagra, HDCP, DRM and SFR keys )}
+            \item {Integration of STMicroelectronics PlayReady SDK in SFR Set Top Boxes products}
+            \item {Developing a library interface of STM PlayReady SDK , to be used by SFR Middleware on Set Top Box .}
+            \item {Integration of Netflix Partner Client Code in Middleware code on Set Top Box Based on 7105 Chip of STM.}
+            \item {Porting some parts of Netflix client code (audio and video driver  and some Direct FB code ) to work on 7105 based Set Top Box}
+            \item {Realization of automatic Netflix tests and certification }
+            \item {Monitoring with Netflix partner via weekly conferences calls between team in US and France and daily coordination integration}
+            \item { \textbf{Environment :} STM, MW SFR , C, C++, JAVA,  PlayReady 1.2, DirectFb ,TEE, Gentoo, mercurial, Git}
+            \item { \textbf{References :} Sbastien Keller(SFR), François Delavaud , Anouar Chelbia (SFR), Vishal Sharma ( Netflix)}
+        \end{cvitems}
+    }
+    %---------------- Bouygues --------------------------------
+
+    \cventry
+    {Architecte, Software integration \& developping Engineer} % Job title
+    {Bouygues télécom} % Organization
+    {Vélizy-villacoublay , France} % Location
+    {sep. 2011 - Jun. 2014} % Date(s)
+    { % Description(s) of tasks/responsibilities
+        \begin{cvitems}
+            \item {Development of software module that use a cloud client ( based on PogoPug Fuse solution); So the user could connect , mount  and use his pogo cloud files on her STB}
+            \item {Development and integration of Media Center new features on Middleware.}
+            \item {Writing of SSA  (Software Specification Architecture) of service STB PVR sharing (PVR: Personnel Video Recording)  : secured solution based on Protocol HLS  to play STB recorded movies on LAN and WAN devices ; records will be transcoded , segmented , encrypted and served to clients).}
+            \item {Writing of STS (Software tests Specifications) of PVR Sharing service on STB part of Service.  }
+            \item {Develop Web Services STB Export module that will export multiple STB features (Remote Control, Pairing, PVR, EPG ..) via HTTP Rest and UPNP. }
+            \item {Develop STB DMR : module proposing DLNA DMR service UPNP  and HTTP Rest. }
+            \item {Develop MediaPlayer : module STB, for mixed playlist media managements}
+            \item {Develop Receiver Expo STB : module that serves as a asynchronous full duplex communication library between the Middleware and Web Services Export Binary}
+            \item {Develop PfsProxy : module on multiple platforms (STB, Android and IOS) of for connection and communication with Bouygues platforms (EPG, PVR, OAuth, Smartvision .. ) with automatic authentication tokens management.}
+            \item {Develop DMC : module on multiple platforms (STB, Android and IOS)  it’s a UPnP control point }
+            \item {Development of a Native Middleware on Android (NDK / C / C ++ / JNI / JAVA and JAVASCRIPT) composed from  DMC, DMS and PFSPROXY :
+                        JNI , JAVA and JavaScript Layers for each library ..}
+            \item { \textbf{Environment :} STB, Middleware Sagem, LibPlatinum,,JAVA, Android, Javascript C, C++, Linux, UPNP, HTTP, HTTPS,SSL }
+            \item { \textbf{References :}  Sandrine Figard (Bouygues telecom), Nicolas Gaude (Bouygues telecom), Jabri Majed(Bouygues telecom) }
+        \end{cvitems}
+    }
+
+
+    %--------------------- NDS ---------------------------
+
+    \cventry
+    {Consulting Engineer} % Job title
+    {NDS-CISCO} % Organization
+    {Issy les Moulineaux, France} % Location
+    {March 2010 - Aug. 2011} % Date(s)
+    { % Description(s) of tasks/responsibilities
+        \begin{cvitems}
+            \item {Development and integration of a module within Middleware STB ; it’s a MediaCenter module that allow the sharing and control of medias over networks via Upnp/Dlna Protocol.}
+            \item {DMS (Digital Media Server) solution is Twonky from PacketVideo company }
+            \item {Development of a module in C for control and management of the Twonky server via RPC and for sharing FTA PVR and media content from USB drives connected to the STB}
+            \item {Development and JAVA JNI  layer of the module to be exploited later by the UI in JAVA}
+            \item { \textbf{Environment :}Middleware MHP de NDS-CISCO, languages C and JAVA, Shell, Makefiles, UPNP, PV Twonky API, PV Twonky Server. }
+            \item { \textbf{References :} Hassen Taleb (NDS-CISCO) , Eric Delaunay (NDS-CISCO) }
+        \end{cvitems}
+    }
+
+    %---------------------- Sagem Defense --------------------------
+
+    \cventry
+    {Software Engineer Development} % Job title
+    {Sagem Défense} % Organization
+    {Massy-Palaiseau, France} % Location
+    {Dec. 2009 - Feb. 2010} % Date(s)
+    { % Description(s) of tasks/responsibilities
+        \begin{cvitems}
+            \item {TMA : Third Maintenance Application of Network Server System on aircraft Airbus A380}
+            \item { \textbf{Environment :} C, C++, Java, Perl, Python, SGBD MYSQL, Linux .. }
+        \end{cvitems}
+    }
+
+    %----------------------- Eurogiciel -------------------------
+
+    \cventry
+    {Software Engineer} % Job title
+    {Eurogiciel} % Organization
+    {Tunis, Tunisia} % Location
+    {May. 2009 - Nov. 2009} % Date(s)
+    { % Description(s) of tasks/responsibilities
+        \begin{cvitems}
+            \item {Design and implementation of an application that manage a Switch via i2C in the NSS (Network System Server) for the Airbus A380}
+            \item {The PSM, interfaces with LDAP, VPN, an I2C interface to control the Switch and a  Flight switches.}
+            \item {Test are automatized in virtual environment using Perl scripting and shared memory C programs . }
+            \item { \textbf{Environment :} C, tested and integrated under Linux FreeBsd 5.3. , perl ..}
+        \end{cvitems}
+    }
+
+    %---------------------- STMicro --------------------------
+
+    \cventry
+    {Set Top Box Low Layer development Engineer,} % Job title
+    {STMicroelectronics} % Organization
+    {Tunis, Tunisia } % Location
+    {Out. 2007 – Apr. 2009} % Date(s)
+    { % Description(s) of tasks/responsibilities
+        \begin{cvitems}
+            \item {Engineer in STAPI (ST-API)  team : responsible for development, maintenance and support for VOUT (Video Output Stage) and HDMI (High Definition Multimedia Interface) drivers for STM socks.}
+            \item {Bug fixing  and support  for various clients. }
+            \item {Porting of drivers code on new chips and update documentation of drivers for new socks }
+            \item { \textbf{Environment :} C, OS21, STLinux, Clear Case, socks: ST7100, ST7109, ST7200 et ST7105. }
+        \end{cvitems}
+    }
+
+
+    \clearpage
+\end{cventries}
+\end{document}
